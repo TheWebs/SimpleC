@@ -11,6 +11,10 @@ Turma criarTurma(int id, char prof[30])
     turma.id = id;
     turma.alunosN = 0;
     strcpy(turma.prof, prof);
+    for(int i = 0; i<30;i++)
+    {
+        turma.alunos[i] = criarAluno(0, 0, "", 0);
+    }
     return turma;
 }
 
