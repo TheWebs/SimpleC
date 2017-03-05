@@ -10,7 +10,7 @@ Turma criarTurma(int id, char prof[30])
     Turma turma;
     turma.id = id;
     turma.alunosN = 0;
-    turma.prof[0] = 'F';
+    strcpy(turma.prof, prof);
     return turma;
 }
 
@@ -47,7 +47,7 @@ int contarAlunos(Turma turma)
     int total = 0;
     for(int i = 0; i<30; i++)
     {
-        if(turma.alunos[i].valid != 0)
+        if(turma.alunos[i].valid == 1)
         {
             total++;
         }

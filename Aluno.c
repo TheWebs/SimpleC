@@ -8,7 +8,7 @@ Aluno criarAluno(int idade, int numero, char nome[30], int valid)
     Aluno aluno1;
     aluno1.idade = idade;
     aluno1.numero = numero;
-    aluno1.nome[0] = 'p';
+    strcpy(aluno1.nome, nome);
     aluno1.valid = valid;
     return aluno1;
 }
