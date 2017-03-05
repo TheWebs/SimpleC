@@ -8,7 +8,7 @@ typedef struct turma{
 }Turma;
 
 Turma criarTurma(int id, char prof[30]);
-void inscreverAluno(Aluno aluno, Turma turma);
+Turma inscreverAluno(Aluno aluno, Turma turma);
 void desinscreverAluno(int numero, Turma turma);
 int contarAlunos(Turma turma);
 void imprimeTurma(Turma turma);

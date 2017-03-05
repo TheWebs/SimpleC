@@ -14,11 +14,11 @@ int main(int argc, char** argv) {
     Aluno ze3 = criarAluno(19, 160221058, "Diogo Silva", 1);
     Aluno ze4 = criarAluno(21, 160221050, "Bruno Dias", 1);
     Turma turma = criarTurma(2, "Julia Juliano");
-    inscreverAluno(ze, turma);
-    inscreverAluno(ze1, turma);
-    inscreverAluno(ze2, turma);
-    inscreverAluno(ze3, turma);
-    inscreverAluno(ze4, turma);
+    turma = inscreverAluno(ze, turma);
+    turma = inscreverAluno(ze1, turma);
+    turma = inscreverAluno(ze2, turma);
+    turma = inscreverAluno(ze3, turma);
+    turma = inscreverAluno(ze4, turma);
     printf("Numero de alunos: %d\n", contarAlunos(turma));
     imprimeTurma(turma);
     return (EXIT_SUCCESS);

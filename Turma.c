@@ -14,15 +14,17 @@ Turma criarTurma(int id, char prof[30])
     return turma;
 }
 
-void inscreverAluno(Aluno aluno, Turma turma)
+Turma inscreverAluno(Aluno aluno, Turma turma)
 {
     if(turma.alunosN < 29)
     {
         turma.alunos[turma.alunosN++] = aluno;
+        return turma;
     }
     else
     {
         printf("A turma ja esta cheia!");   
+        return turma;
     }
     
 }
